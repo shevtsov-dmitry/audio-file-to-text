@@ -12,7 +12,17 @@ source ./bin/activate
 
 ## Usage
 
+Use directly with ./bin/python ./main.py
+
+Or create a system script
+
+make syslink for unix system
+
+```bash
+sudo ln -sf "$PWD/main.py" /usr/local/bin/audio-to-text-ru
 ```
+
+HELP example
 
 ```bash
 usage: audio-to-text-ru [-h] [-d DIRECTORY_TEXT_OUTPUT] [--overwrite] FILE [FILE ...]
