@@ -10,9 +10,21 @@ source ./bin/activate
 ./bin/python -m pip install -U $(cat packages.txt)
 ```
 
-Run
+## Usage
+
+```
 
 ```bash
-./bin/python main.py
+usage: audio-to-text-ru [-h] [-d DIRECTORY_TEXT_OUTPUT] [--overwrite] FILE [FILE ...]
 
+Transcribe Russian audio files using faster-whisper on CUDA.
+
+positional arguments:
+  FILE                  audio files or directories to transcribe
+
+options:
+  -h, --help            show this help message and exit
+  -d, --directory-text-output DIRECTORY_TEXT_OUTPUT
+                        output directory for .txt files
+  --overwrite           overwrite existing .txt files
 ```
